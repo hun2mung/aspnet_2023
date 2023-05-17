@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <link rel="stylesheet" media="screen" href="main.css"> <!-- css 스타일 링크 -->
+    <style>
+        /* 내부 스타일 */
+    </style>
+    <script>
+        alert(1 + 30); // alert + debugging => alergging
+        console.log("Hello, console log");
+        console.log("Second log!!");
+        var a = 1;
+        var b = 1;
+        console.log(a == b);
+        console.log(a === b); // js에만 있는 객체까지 모두 일치하는 경우
+        let c = 1.5;
+        console.log(c);
+
+        var radius = 10;
+        const pi = 3.141592;
+        alert('원의 크기는 ' + radius * radius * pi);
+
+        function test() {
+            var i = 10;
+            return i * pi;
+        }
+
+        alert(test());
+
+        var test2 = function () {
+            alert('test2');
+            alert('다른 함수 선언 방법');
+        }
+
+        test2();
+
+        // 객체
+        var product = {
+            name: '7D 건조망고',
+            type: '당절임',
+            성분: '망고, 설탕, ...',
+            원산지: '필리핀',
+            imported: true,
+            price: 5000
+        }
+        console.log(product.name);
+        console.log(product['name']);
+
+        for(var i in product){
+            console.log(i);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Hello HTML5</h1>
+</body>
+
+</html>

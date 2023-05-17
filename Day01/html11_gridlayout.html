@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>그리드 레이아웃</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+        #wrap {
+            display: grid;  /* 그리드 레이아웃을 사용*/
+            grid-template-columns: repeat(3, 1fr);  /* fr(배율) 1* */
+            grid-template-rows: 2fr 1fr;    /* 2* 1* */
+            row-gap: 5px;
+            column-gap: 5px;
+        }
+
+        .item{
+            padding: 10px;
+            background-color: gainsboro;
+        }
+        .item:nth-child(2n+1){
+            background-color: gray;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea enim porro sint culpa cum. Ut,
+            sint. Recusandae autem beatae atque quis itaque molestiae ab soluta maxime, nobis illo dolorem eos voluptate
+            quia accusamus consectetur, nulla labore incidunt praesentium repellendus facilis. Suscipit, eius
+            laudantium! Sint atque quae nobis quibusdam delectus, illo necessitatibus architecto dignissimos aspernatur
+            magnam earum temporibus cum ducimus hic nam! Nemo harum, repudiandae repellat a minus similique illum
+            delectus aliquid, facere aut ipsa eligendi vitae voluptatem quo mollitia praesentium iste sit nam voluptates
+            officia quae earum pariatur! Nihil similique neque accusamus repellendus necessitatibus maxime laudantium
+            ullam tenetur ipsum facere!</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit dolore illum molestias ratione ea iure quae aperiam fuga, officiis, rerum sequi. Ratione nostrum quidem voluptate aut, distinctio rem, consequuntur at nisi, nobis adipisci ducimus? Eos dignissimos doloremque sequi asperiores ducimus ipsum? Possimus porro deleniti doloremque inventore. Error, necessitatibus incidunt?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit dolore illum molestias ratione ea iure quae aperiam fuga, officiis, rerum sequi. Ratione nostrum quidem voluptate aut, distinctio rem, consequuntur at nisi, nobis adipisci ducimus? Eos dignissimos doloremque sequi asperiores ducimus ipsum? Possimus porro deleniti doloremque inventore. Error, necessitatibus incidunt?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit dolore illum molestias ratione ea iure quae aperiam fuga, officiis, rerum sequi. Ratione nostrum quidem voluptate aut, distinctio rem, consequuntur at nisi, nobis adipisci ducimus? Eos dignissimos doloremque sequi asperiores ducimus ipsum? Possimus porro deleniti doloremque inventore. Error, necessitatibus incidunt?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit dolore illum molestias ratione ea iure quae aperiam fuga, officiis, rerum sequi. Ratione nostrum quidem voluptate aut, distinctio rem, consequuntur at nisi, nobis adipisci ducimus? Eos dignissimos doloremque sequi asperiores ducimus ipsum? Possimus porro deleniti doloremque inventore. Error, necessitatibus incidunt?</div>
+        <div class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, reprehenderit dolore illum molestias ratione ea iure quae aperiam fuga, officiis, rerum sequi. Ratione nostrum quidem voluptate aut, distinctio rem, consequuntur at nisi, nobis adipisci ducimus? Eos dignissimos doloremque sequi asperiores ducimus ipsum? Possimus porro deleniti doloremque inventore. Error, necessitatibus incidunt?</div>
+    </div>
+</body>
+
+</html>

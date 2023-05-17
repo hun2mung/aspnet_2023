@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>네비게이션 메뉴</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+</head>
+<body>
+    <div>
+        <ol>    <!-- 번호 정렬 -->
+            과일
+            <li>망고</li>   
+            <li>파파야</li>
+            <li>망고스틴</li>
+            <li>바나나
+                <ol>
+                    목록
+                    <li>원숭이바나나</li>
+                    <li>사료용바나나</li>
+                    <li>식용바나나</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h2>노트북</h2>
+        <ul>    <!-- 목록 정렬 -->
+            <li>삼성</li>
+            <li>LG</li>
+            <li>HP</li>
+            <li>바나나
+                <ul>
+                    <li>XPS15</li>
+                    <li>XPS17</li>
+                    <li>XPS11</li>
+                </ul>
+            </li>
+        </ul>
+            
+        
+    </div>
+
+    <div>
+        <table border="1"> <!-- 표 삽입, 표 테두리 지정 -->
+            <tr>    <!-- 행 삽입 -->
+                <th></th>   <!-- 열 헤더 삽입 -->
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+            <tr>
+                <td>1교시</td>  <!-- 열 삽입 -->
+                <td>영어</td>
+                <td>국어</td>
+                <td>과학</td>
+                <td colspan="2">미술</td>
+                <!-- <td>기술</td> -->
+            </tr>
+            <tr>
+                <td>2교시</td>  <!-- 열 삽입 -->
+                <td>도덕</td>
+                <td>체육</td>
+                <td>영어</td>
+                <td>수학</td>
+                <td rowspan="2">사회</td>
+            </tr>
+            <tr>
+                <td>3교시</td>  <!-- 열 삽입 -->
+                <td>국사</td>
+                <td>독어</td>
+                <td>일어</td>
+                <td>중어</td>
+                <!-- <td>사회</td> -->
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <audio src="./test.mp3" controls="controls"></audio><hr>
+        <audio src="./test.mp4" controls="controls"></audio>
+    </div>
+</body>
+</html>
