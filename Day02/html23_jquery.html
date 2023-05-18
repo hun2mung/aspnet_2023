@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" 
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('input').click(function(){
+                $('.page').toggle(500);
+            });
+
+            $('.box').css({
+                width: '100px',
+                height: '100px',
+                backgroundColor: 'red'
+            }).animate({
+                width: 500,
+                opacity: 0.5,
+            }, 1500);
+        });
+    </script>
+</head>
+<body>
+    <input type="button" value="Toggle">
+    <div class="page">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quis nisi nulla doloremque adipisci error iusto voluptatum ducimus vero sint odio ea repellat quaerat delectus eligendi similique, sit praesentium laboriosam reiciendis excepturi? Quod dolorem, nesciunt eaque optio modi nam alias dignissimos unde non sit eveniet a, vero neque? Harum repellendus suscipit saepe nemo alias consequatur ad quis perferendis quo nam dolore culpa consequuntur, perspiciatis corrupti eos mollitia. Est cum impedit consectetur odit exercitationem ratione eveniet officiis, provident aliquid rerum distinctio laboriosam sint, possimus sunt harum iure, libero incidunt. Eos in autem impedit provident necessitatibus minima facilis excepturi delectus, ullam numquam!</p>
+    </div>
+    <div class="box"></div>
+</body>
+</html>

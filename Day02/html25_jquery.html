@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" 
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function(){
+            var count = 0;
+            var run = $('#run');
+            var frames = ['./images/0.png',
+                        './images/1.png',
+                        './images/2.png',
+                        './images/3.png',
+                        './images/4.png',
+                        './images/5.png',
+                        './images/6.png',
+                        './images/7.png',
+                        './images/8.png',
+                        './images/9.png',
+                        './images/10.png',
+                        './images/11.png',
+                        './images/12.png',
+                        './images/13.png',
+                        './images/14.png',];
+            // 타이머 반복
+            setInterval(()=>{
+                $('#run').attr('src', frames[count++ % frames.length]);
+            }, 1000/20);    // 20fps
+        });
+    </script>
+</head>
+<body>
+    <img id="run">
+</body>
+</html>

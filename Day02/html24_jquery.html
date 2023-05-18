@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" 
+        crossorigin="anonymous">
+        </script>
+    <script>
+        $(document).ready(function () {
+            var simin1 = $('#simin1');
+            var simin2 = $('#simin2');
+
+            simin1.focus(); // 시민1에 최초에 포커스를 줌
+
+            simin1.keydown(function () {
+                if (simin1.val().length >= 6) {
+                    simin2.focus(); // 시민1 6자리 이상이면 시민2로 포커스
+                }
+            });
+
+            simin2.keydown(function (event) {
+                var event = event || window.event;
+                if (event.keyCode == 8 && simin2.val().length == 0) {   // 8은 백스페이스
+                    simin1.focus();
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="text" name="simin1" id="simin1" maxlength="6">
+        <span></span>
+        <input type="text" name="simin2" id="simin2" maxlength="7"><br>
+        <input type="submit" value="제출">
+    </form>
+</body>
+
+</html>
