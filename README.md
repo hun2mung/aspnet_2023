@@ -43,3 +43,8 @@ Pinterest 스타일 페이지 클로닝
 ASP.NET Core MVC 게시판
 
 <img src=>
+
+## 6일차
+- ASP.NET MVC
+    - 게시판 정리
+    - 계정관리 추가
