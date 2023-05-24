@@ -23,11 +23,11 @@ ASP.NET 학습 리포지토리
 
 Bootstrap 앨범 클로닝
 
-<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/bootstrap.gif" width="700">
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/bootstrap.gif" width="800">
 
 Pinterest 스타일 페이지 클로닝
 
-<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/pinterest.gif" width="700">
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/pinterest.gif" width="800">
 
 
 ## 4일차
@@ -47,4 +47,4 @@ Pinterest 스타일 페이지 클로닝
 
 ASP.NET Core MVC 게시판
 
-<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/board.gif" width="700">
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/board.gif" width="800">
