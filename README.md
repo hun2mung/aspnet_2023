@@ -40,11 +40,11 @@ Pinterest 스타일 페이지 클로닝
 - ASP.NET MVC
     - 게시판 만들기 계속!
 
-ASP.NET Core MVC 게시판
-
-<img src=>
-
 ## 6일차
 - ASP.NET MVC
     - 게시판 정리
     - 계정관리 추가
+
+ASP.NET Core MVC 게시판
+
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/board.gif" width="700">
