@@ -38,13 +38,36 @@ Pinterest 스타일 페이지 클로닝
 
 ## 5일차
 - ASP.NET MVC
-    - 게시판 만들기 계속!
+    - 게시판 페이징
+        - Trumbowyg 에디터
 
 ## 6일차
 - ASP.NET MVC
     - 게시판 정리
     - 계정관리 추가
+        - 회원가입
+        - 로그인
 
 ASP.NET Core MVC 게시판
 
 <img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/board.gif" width="800">
+
+## 7일차
+- ASP.NET Core MVC
+    - 게시판 정리( 아이디 삭제, 번호 정리 )
+    - 권한 관리
+        - 사용자 별 권한 할당 (관리자, 사용자 분리)
+        - 관리자는 게시판 글 삭제 가능
+        - 프로필 수정
+
+ASP.NET Core MVC 게시판
+
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/board_authorization.gif" width="800">
+
+ ## 8일차   
+- ASP.NET Core MVC
+    - 부트스트랩 테마(SEO Dream) 적용
+
+- ASP.NET RestAPI
+- 개인포트폴리오
+    - 부트스트랩 테마 적용
