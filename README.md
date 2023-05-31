@@ -80,9 +80,5 @@ ASP.NET Core MVC 게시판
         - IIS .net6.0 런타임 설치
     - 다른 Bootstrap 테마 적용
 
-
-    
-- ASP.NET RestAPI
-    - OpenAPI같은 서비스 운영
-    - RestAPI Server
-    - WPF Cilent
+## 10일차
+- Rest API
