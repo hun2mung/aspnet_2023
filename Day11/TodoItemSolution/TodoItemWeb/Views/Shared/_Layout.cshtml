@@ -52,7 +52,7 @@
                     "isComplete": $('#IsComplete option:selected').val()
                 };
 
-                console.log(data);
+                // console.log(data);
                 $.ajax("https://localhost:7188/api/TodoItems/", {
                     type: "POST", // DB INSERT
                     data: JSON.stringify(data), // json data로 변환
@@ -67,6 +67,9 @@
                         if(id !=0){
                             $('#result').text('한건 추가되었습니다.');
                         }
+                    },
+                    error: function(request, status, error){
+                        console.log(error);
                     }
                 });
             });        
