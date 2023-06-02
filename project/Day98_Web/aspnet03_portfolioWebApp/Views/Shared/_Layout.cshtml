@@ -24,22 +24,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
 </head>
 <body id="page-top">
-    <header class="masthead" style="background-image: url('https://picsum.photos/1200/800/?random')">
-        <div class="container position-relative px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-                    <div class="site-heading">
-                        <h1>동훈's 포트폴리오</h1>
-                        <span class="subheading">A Blog Theme by Start Bootstrap</span>
-                    </div>
-                </div>
+    <header class="masthead" style="background-image: url('https://picsum.photos/1200/800/?blur'); height:500px;">
+        <div class="site-heading">
+            <div style="background-color:transparent">
+                <img width="200" class="profile" src="/me.png">
             </div>
+            <span class="subheading" style="font-weight:bold; font-size:35px">Hun2mung's Portfolio</span>
         </div>
     </header>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" asp-controller="Home" asp-action="Index">hun2mung</a>
+            
+            <audio autoplay controls>
+                <source src="~/Sparkle OST.mp3" type="audio/mp3" />
+            </audio>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -47,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="~/themes/using/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Portfolio">About</a></li>
 
                     @if (signInManager.IsSignedIn(User))
                     {
@@ -64,9 +65,9 @@
                             <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Account" asp-action="Profile"
                                asp-route-userName="@userManager.GetUserName(User)">Profile</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="scroll-to-section">
                             <form asp-controller="Account" asp-action="Logout" method="post">
-                                <button class="nav-link px-lg-3 py-3 py-lg-4" type="submit">@userManager.GetUserName(User)</button>
+                                <button type="submit" class="btn btn-link text-decoration-underline" style="font-size:15px; font-weight:bold; background-color:transparent; border-color:transparent; color:white; padding: 19px;" >@userManager.GetUserName(User)</button>
                             </form>
                         </li>
                     }
@@ -111,7 +112,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="#!">
+                            <a href="https://github.com/hun2mung">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>

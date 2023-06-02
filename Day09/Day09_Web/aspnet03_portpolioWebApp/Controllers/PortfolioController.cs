@@ -1,9 +1,9 @@
 ﻿using aspnet02_boardapp.Data;
-using aspnet03_portpolioWebApp.Models;
+using aspnet03_portfolioWebApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace aspnet03_portpolioWebApp.Controllers
+namespace aspnet03_portfolioWebApp.Controllers
 {
     public class PortfolioController : Controller
     {

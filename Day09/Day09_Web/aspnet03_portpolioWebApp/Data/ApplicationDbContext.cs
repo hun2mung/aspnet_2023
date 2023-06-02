@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using aspnet02_boardapp.Models;
 using Microsoft.EntityFrameworkCore;
-using aspnet03_portpolioWebApp.Models;
+using aspnet03_portfolioWebApp.Models;
 
 namespace aspnet02_boardapp.Data
 {

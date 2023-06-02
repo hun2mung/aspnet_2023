@@ -1,4 +1,4 @@
-﻿@model IEnumerable<aspnet03_portfolioWebApp.Models.PortfolioModel>;
+﻿@*@model IEnumerable<aspnet03_portfolioWebApp.Models.PortfolioModel>;*@
 
 @{
     ViewData["Title"] = "홈";
@@ -26,39 +26,8 @@
             <!-- Divider-->
             <hr class="my-4" />
             <div class="post-preview">
-                <a>
-                @if (Model.Count() > 0)
-                {
-                    var loop = 1;
-                    foreach (var item in Model)
-                    {
-                        if (loop % 2 == 1)
-                        {   // 홀수이면
-                            @Html.Raw("<div class=\"item\">")
-                        }
-                        // 동적으로 포트폴리오 이미지 객체를 만들어 주는 파트
-                        @Html.Raw("<div class=\"portfolio-item\">" +
-                                "  <div class=\"thumb\">" +
-                                $"    <img src=\"/uploads/{item.FileName}\" width='445' height='305'>" +
-                                "    <div class=\"hover-content\">" +
-                                "      <div class=\"inner-content\">" +
-                                $"        <a href=\"{item.Url}\" target='_blank'><h4>{item.Title}</h4></a>" +
-                                $"        <span>{item.Description}</span>" +
-                                "      </div>"+
-                                "    </div>" +
-                                "  </div>" +
-                                "</div>")
 
-                        if (loop % 2 == 0)
-                        {
-                            //짝수이면
-                            @Html.Raw("</div>")
-                        }
-
-                        loop++;
-                    }
-                }
-                </a>
+                
             </div>
         </div>
     </div>

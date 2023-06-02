@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace aspnet03_portpolioWebApp.Models
+namespace aspnet03_portfolioWebApp.Models
 {
     public class PortfolioModel // 실제 DB에 저장할 모델
     {

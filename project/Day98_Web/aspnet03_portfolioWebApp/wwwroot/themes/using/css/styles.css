@@ -2728,7 +2728,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: 0.875rem;
   --bs-btn-font-weight: 800;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
+  --bs-btn-color: blue;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
@@ -3070,19 +3070,20 @@ textarea.form-control-lg {
 }
 
 .btn-link {
-  --bs-btn-font-weight: 400;
-  --bs-btn-color: var(--bs-link-color);
-  --bs-btn-bg: transparent;
-  --bs-btn-border-color: transparent;
-  --bs-btn-hover-color: var(--bs-link-hover-color);
-  --bs-btn-hover-border-color: transparent;
-  --bs-btn-active-color: var(--bs-link-hover-color);
-  --bs-btn-active-border-color: transparent;
-  --bs-btn-disabled-color: #6c757d;
-  --bs-btn-disabled-border-color: transparent;
-  --bs-btn-box-shadow: none;
-  --bs-btn-focus-shadow-rgb: 38, 151, 175;
-  text-decoration: none;
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: blue;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--bs-link-hover-color);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-color: var(--bs-link-hover-color);
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-border-color: transparent;
+    --bs-btn-box-shadow: none;
+    --bs-btn-focus-shadow-rgb: 38, 151, 175;
+    
+    text-decoration: underline;
 }
 .btn-link:focus-visible {
   color: var(--bs-btn-color);
@@ -10668,24 +10669,19 @@ footer {
 }
 
 header.masthead {
-  position: relative;
-  margin-bottom: 3rem;
-  padding-top: calc(8rem + 57px);
-  padding-bottom: 8rem;
-  background: no-repeat center center;
-  background-color: #6c757d;
-  background-size: cover;
-  background-attachment: scroll;
+    position: relative;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    background: no-repeat center center;
+    background-color: #6c757d;
+    background-size: cover;
+    background-attachment: scroll;
 }
 header.masthead:before {
-  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: #212529;
-  opacity: 0.5;
+  height:10px;
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
@@ -10735,8 +10731,8 @@ header.masthead .post-heading .meta a {
 }
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: 12.5rem;
-    padding-bottom: 12.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   header.masthead .page-heading h1, header.masthead .page-heading .h1,
   header.masthead .site-heading h1,
@@ -10795,4 +10791,8 @@ header.masthead .post-heading .meta a {
   .post-preview > a > .post-title {
     font-size: 2.25rem;
   }
+}
+
+.logout{
+
 }

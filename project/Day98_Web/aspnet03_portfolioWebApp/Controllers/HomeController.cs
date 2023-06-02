@@ -29,7 +29,7 @@ namespace aspnet02_boardapp.Controllers
             return View(model);
         }
 
-        public IActionResult Privacy()
+        public IActionResult Portfolio()
         {
             return View();
         }
