@@ -47,20 +47,28 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Portfolio">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Index">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="AboutMe">ABOUTME</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Portfolio">ARTWORK</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Board" asp-action="Index">INQUIRY</a></li>
+
 
                     @if (signInManager.IsSignedIn(User))
                     {
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Admin" asp-action="ListRoles">Admin</a>
+                                <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Portfolio" asp-action="Index">INDEX</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Portfolio" asp-action="Index">Portfolio</a>
+                                <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Admin" asp-action="ListRoles">Admin</a>
                             </li>
                         }
+                        @if (User.IsInRole("User"))
+                        {
+                            <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Home" asp-action="Contact">CONTACT</a></li>
+                        }
+
                         <li class="nav-item">
                             <a class="nav-link px-lg-3 py-3 py-lg-4" asp-controller="Account" asp-action="Profile"
                                asp-route-userName="@userManager.GetUserName(User)">Profile</a>
@@ -95,27 +103,27 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <ul class="list-inline text-center">
-                        <li class="list-inline-item">
+@*                        <li class="list-inline-item">
                             <a href="#!">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    <i class="fab fa-velog fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
-                        </li>
+                        </li>*@
                         <li class="list-inline-item">
-                            <a href="#!">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://github.com/hun2mung">
+                            <a href="https://github.com/hun2mung" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/r_lol_orn98">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
@@ -124,10 +132,18 @@
                 </div>
             </div>
         </div>
+        <div class="use1" style="text-align:right">
+            <a href="#page-top"><i class="fas fa-angle-up"></i></a>
+        </div>
     </footer>
 
+    <style>
+        .use1{
+            margin-right:20px
+        }
+    </style>
+
     <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
 
     <!-- jQuery & Bootstrap CND LINKs -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 

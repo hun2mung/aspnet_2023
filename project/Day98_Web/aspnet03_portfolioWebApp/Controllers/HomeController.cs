@@ -34,6 +34,22 @@ namespace aspnet02_boardapp.Controllers
             return View();
         }
 
+        public IActionResult AboutMe()
+        {
+            return View();
+        }
+
+        //[HttpGet]
+        //public IActionResult Contact()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //public IActionResult Contact()
+        //{
+        //    return View();
+        //}
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
