@@ -92,3 +92,15 @@ ASP.NET Core MVC 게시판
 - ASP.NET RestAPI
     - RestAPI Server 수정
     - FrontEnd Server 작업계속
+
+RestAPI FrontEnd Web
+
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/TodoItemWeb.gif" width="800">
+
+## 13일차
+- ASP.NET RestAPI
+    - WPF 앱 연동
+
+RestAPI 사용 WPF App 및 Web 화면
+
+<img src="https://github.com/hun2mung/aspnet_2023/blob/main/images/TodoItem.gif" width="800">

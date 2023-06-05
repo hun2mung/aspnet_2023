@@ -1,5 +1,5 @@
 ﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    For more information on enabling MVC for empty projects /  visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
@@ -7,19 +7,83 @@
 <style>
     .column {
         justify-content: center;
-        width: 40%;
+        width: 45%;
         padding: 10px;
         height: auto; /* Should be removed. Only for demonstration */
-        margin-left: 10px;
+/*        margin-left: 10px;*/
         text-align: left;
     }
 </style>
 
-<div class="row" style="justify-content:center">
-    <div class="column" style="background-color:white;">
+<table border="1" style="border:1px solid white; margin-left:auto;margin-right:auto;" width="80%">
+    <th colspan="2">
+        <h1 style="font-weight:bolder">이동훈</h1>
+        <hr />
+    </th>
+
+    <tr>
+        <!-- 첫번째 줄 시작 -->
+        <td class="column">
+            <ul>
+                <li>
+                    <h4 style="font-weight:bold">Major</h4>
+                    <p>부경대학교 컴퓨터공학과</p>
+
+                </li>
+                <li>
+                    <h4 style="font-weight:bold">Birth</h4>
+                    <p>1998.03.18</p>
+
+                </li>
+                <li>
+                    <h4 style="font-weight:bold">Email</h4>
+                    <p>ldh5444@naver.com</p>
+                </li>
+                <li>
+                    <h4 style="font-weight:bold">mbti</h4>
+                    <p>ISTP</p>
+                </li>
+
+            </ul>
+        </td>
+        <td class="column">
+            <ul>
+                <li>
+                    <h4 style="font-weight:bold">자격</h4>
+                    <p>정보처리기사 1급 / 졸업학점(3.9)</p>
+                    <p>토익 790 / 토스 130</p>
+                    <p>한국사 1급 / SQLD</p>
+
+                </li>
+                <li>
+                    <h4 style="font-weight:bold">Birth</h4>
+                    <p>18년 육군만기전역</p>
+                    <p>21년 백경클래식기타연구회 회장 / 22년 FC ARES 주장</p>
+                </li>
+
+            </ul>
+        </td>
+    </tr><!-- 첫 줄 끝-->
+
+    <tr >
+        <td colspan="2">
+            <ul>
+                <li>
+                    <h4 style="font-weight:bold">STUDY</h4>
+                    <p>Python  /  Data Structure & Algorithms  /  Utilization of IoT databases with MySQL  /  C++  /  C#  /  WPF  /  ASP.NET / <br /> Business Apllication Development  /  Embedded System  /  IoT Network Programming  /  IoT Open H/W Platform Utilization  /  Big-Data Analytics  /  Final Project</p>
+
+                </li>
+            </ul>
+        </td>
+    </tr>
+    
+
+</table>
+@*<div class="row" style="justify-content:center">
+    <div class="column" style="background-color:bisque;">
+        <h1 style="font-weight:bolder">이동훈</h1>
+        <hr />
         <ul>
-            <h1 style="font-weight:bolder">이동훈</h1>
-            <hr />
             <li>
                 <h4 style="font-weight:bold">Major</h4>
                 <p>부경대학교 컴퓨터공학과</p>
@@ -40,13 +104,10 @@
             </li>
 
         </ul>
-
-        @*your work, your Social Security number, and your mom’s maiden name. No, wait, not those last two.<br></p>*@
-
     </div>
-    <div class="column" style="background-color:white;">
-        <h2>Column 2</h2>
-        <p>Some text..</p>
+    <div class="column" style="background-color:bisque;">
+
+
     </div>
 </div>
-<div class="row-cols-2"></div>
+<div class="row-cols-2"></div>*@
